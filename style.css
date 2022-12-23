@@ -1,4 +1,4 @@
-@media all and (max-width: 600px) and (orientation: landscape) {
+@media all and (max-width: 600px) and (orientation: portrait) {
   /* styles here */
   .modal-box {
     font-family: "Montserrat", sans-serif;
