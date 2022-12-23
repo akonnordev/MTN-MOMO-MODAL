@@ -4,6 +4,8 @@ let modalBg = document.querySelector(".modal-bg");
 let modalClose = document.querySelector(".close-modal");
 
 modalBtn.addEventListener("click", function () {
+  let guess = Number(document.querySelector(".guess").value);
+  console.log(typeof guess, guess);
   modalBg.classList.add("modal-activate");
 });
 
