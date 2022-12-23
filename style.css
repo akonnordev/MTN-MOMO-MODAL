@@ -1,10 +1,16 @@
-@media all and (max-width: 600px) and (orientation: portrait) {
-  /* styles here */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  h1 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+  }
   .modal-box {
     font-family: "Montserrat", sans-serif;
     background-color: white;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
