@@ -1,0 +1,72 @@
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.modal-activate {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-box {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  width: 30%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+input[type="password"] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+input[type="submit"] {
+  background-color: #cdd2d0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.position-modalbtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-btn {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: inline-block;
+  background: url(images/mtnlogo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 60px 60px;
+}
+img {
+  position: fixed;
+  height: 50%;
+}

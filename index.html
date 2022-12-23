@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+    <title>MTN MOMO MODAL</title>
+  </head>
+  <body>
+    <div class="position-modalbtn">
+      <button class="modal-btn"></button>
+    </div>
+    <div class="modal-bg">
+      <div class="modal-box">
+        <h1>Enter MoMo Pin<br />(055 106 6605)</h1>
+        <form>
+          <input
+            type="password"
+            inputmode="numeric"
+            name="pin"
+            placeholder="4 DIGITS PIN HERE"
+            pattern="[0-9]{4}"
+            maxlength="4"
+            autocomplete="current-password"
+            required=""
+            id="id_password"
+          />
+          <i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -30px; cursor: pointer"
+          ></i>
+          <input type="submit" value="send" />
+        </form>
+        <button onclick="reveal()">Check your PIN</button>
+        <p>Make sure no one is looking at your <br />PIN</p>
+        <button class="close-modal">&times;</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
